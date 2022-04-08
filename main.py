@@ -361,7 +361,7 @@ def main():
 
     if pokemon_1.get_weapon_type().name == "HEADBUTT":
         print("Test PASS. The parameter weapon_type has been correctly set.")
-    else:p
+    else:
         print("Test FAIL. Check the method __init__().")
 
     if pokemon_1.get_health_points() == 100:
@@ -438,6 +438,62 @@ def main():
             print("Test PASS. The method fight_attack() has been implemented correctly.")
         else:
             print("Test FAIL. Check the method fight_attack().")
+    def funcion_1(a, b, c):
+    a = b - c
+    b = c
+    return b
+
+def funcion_2(x, y, z):
+    a = z
+    b = x
+    c = y
+    
+    a = b + c
+    b = c
+    return a
+    
+
+def funcion_3(m, n, l):
+    a = m
+    b = n
+    c = l
+    
+    a = b - c
+    b = c
+    return a
+    
+def funcion_4(a, x, m):
+#    a = z
+    b = x
+    c = m
+    
+    c = b + c
+    b = c
+    return b
+        
+
+def principal():
+    a = 1
+    b = 2
+    c = 3
+    m = 4
+    n = 5
+    l = 6
+    x = 7
+    y = 8
+    z = 9
+    
+    funcion_2(a , b, c)
+    
+    print("Value of a : " + str(a))
+    
+    b = funcion_3(a , b, c)
+    
+    c = funcion_4(m , n, l)
+    
+    print("Value of c : " + str(c))
+    
+    funcion_1(x , y, z)
 
 
 

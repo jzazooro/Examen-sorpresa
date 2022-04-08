@@ -56,6 +56,3 @@ def principal():
     funcion_1(x , y, z)
 
 
-if __name__ == "__main__":
-    principal()
-
