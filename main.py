@@ -309,6 +309,49 @@ def main():
             print("Test PASS. The method fight_attack() has been implemented correctly.")
         else:
             print("Test FAIL. Check the method fight_attack().")
+    if isinstance(WeaponType.PUNCH, WeaponType):
+        print("Test PASS. The enum for Punch has been correctly set.")
+    else:
+        print("Test FAIL. Check the method __init__().")
+
+    if isinstance(WeaponType.KICK, WeaponType):
+        print("Test PASS. The enum for Kick has been correctly set.")
+    else:
+        print("Test FAIL. Check the method __init__().")
+
+    if isinstance(WeaponType.ELBOW, WeaponType):
+        print("Test PASS. The enum for Elbow has been correctly set.")
+    else:
+        print("Test FAIL. Check the method __init__().")
+
+    if isinstance(WeaponType.HEADBUTT, WeaponType):
+        print("Test PASS. The enum for Head Butt has been correctly set.")
+    else:
+        print("Test FAIL. Check the method __init__().")
+
+    print("=================================================================.")
+    print("Test Case 2: Check Class WeaponType - Value.")
+    print("=================================================================.")
+
+    if WeaponType.PUNCH.value == 2:
+        print("Test PASS. The enum for Punch has been correctly set.")
+    else:
+        print("Test FAIL. Check the method __init__().")
+
+    if WeaponType.KICK.value == 4:
+        print("Test PASS. The enum for Kick has been correctly set.")
+    else:
+        print("Test FAIL. Check the method __init__().")
+
+    if WeaponType.ELBOW.value == 6:
+        print("Test PASS. The enum for Elbow has been correctly set.")
+    else:
+        print("Test FAIL. Check the method __init__().")
+
+    if WeaponType.HEADBUTT.value == 10:
+        print("Test PASS. The enum for Head Butt has been correctly set.")
+    else:
+        print("Test FAIL. Check the method __init__().")
 
 
 
