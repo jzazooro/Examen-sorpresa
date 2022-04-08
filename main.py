@@ -41,7 +41,7 @@ def main():
     pokemon_3 = PokemonAir(3, "Pidgey", WeaponType.KICK, 97, 8, 7)
 
     if pokemon_3.is_alive():
-        pokemon_was_hit = pokemon_3.fight_defense(200)  # With this the Pokemon should be retired.
+        pokemon_was_hit = pokemon_3.fight_defense(200)
 
         if pokemon_was_hit:
             if not pokemon_3.is_alive():
@@ -194,7 +194,7 @@ def main():
     pokemon_3 = PokemonElectricity(3, "Pikachu", WeaponType.KICK, 97, 8, 7)
 
     if pokemon_3.is_alive():
-        pokemon_was_hit = pokemon_3.fight_defense(200)  # With this the Pokemon should be retired.
+        pokemon_was_hit = pokemon_3.fight_defense(200)
 
         if pokemon_was_hit:
             if not pokemon_3.is_alive():
@@ -276,7 +276,7 @@ def main():
     pokemon_3 = PokemonWater(3, "Squirtle", WeaponType.KICK, 97, 15, 8)
 
     if pokemon_3.is_alive():
-        pokemon_3.fight_defense(200)  # With this the Pokemon should be retired.
+        pokemon_3.fight_defense(200)
 
         if not pokemon_3.is_alive():
             print("Test PASS. The method is_alive() has been implemented correctly.")
@@ -397,7 +397,7 @@ def main():
     pokemon_3 = Pokemon(3, "Wartortle", WeaponType.KICK, 97, 8, 9)
 
     if pokemon_3.is_alive():
-        pokemon_3.fight_defense(200)  # With this the Pokemon should be retired.
+        pokemon_3.fight_defense(200)
 
         if not pokemon_3.is_alive():
             print("Test PASS. The method is_alive() has been implemented correctly.")
@@ -463,7 +463,7 @@ def funcion_3(m, n, l):
     return a
     
 def funcion_4(a, x, m):
-#    a = z
+    a = x-m
     b = x
     c = m
     
