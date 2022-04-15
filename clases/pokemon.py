@@ -123,16 +123,8 @@ class Pokemon():
 
 
     def fight_defense(self, points_of_damage):
-        if not isinstance(points_of_damage, int):
-            raise TypeError("The parameter points_of_damage should be an int.")
-
-        print("The Pokemon " + self._pokemon_name +
-              " has received an attack of " +
-              str(points_of_damage) + " points of damage.")
-
         if points_of_damage > self._defense_rating:
-            self._health_points = (self._health_points -
-                                   (points_of_damage - self._defense_rating))
+            self._health_points = (self._health_points -(points_of_damage - self._defense_rating))
             pokemon_was_hit = True
         else:
             print("No damage received.")
@@ -142,15 +134,13 @@ class Pokemon():
 
         return pokemon_was_hit
     def fight_attack(self, pokemon_to_attack):
-        points_of_damage = self._attack_rating
-
-        print("The Pokemon " + self._pokemon_name +" hits the Pokemon " + pokemon_to_attack.get_pokemon_name() +" with " + str(points_of_damage) + " points of damage!")
-
-        pokemon_was_hit = pokemon_to_attack.fight_defense(points_of_damage)
-
-        return pokemon_was_hit
-        
-    def elegiratque(self, movimiento):
+      if(pokemon_to_attack.fight_defense(self._attack_rating)==True):
+        print(self._pokemon_name, "ha hecho", str(self._attack_rating, "de daño" ))
+        return True
+      else:
+        print("el ataque ha sido esquivado")
+        return False
+    def elegirataque(self, movimiento):
       movimiento=input("que movimiento quieres realizar?")
       if(isinstance(movimiento,str)==True):
         self.movimiento=movimiento
