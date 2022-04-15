@@ -40,8 +40,7 @@ from weapon_type import WeaponType
 obj_Pokemon = PokemonElectricity(1, "Pikachu", WeaponType.PUNCH, 100, 7, 10)
 
 
-    def __init__(self, pokemon_id, pokemon_name, weapon_type, health_points,
-                 attack_rating, defense_rating):
+    def __init__(self, pokemon_id, pokemon_name, weapon_type, health_points, attack_rating, defense_rating):
         """Constructor of the class.
 
         This special method is executed when an object of this class is

@@ -157,7 +157,7 @@ def main():
             print("Test PASS. The method fight_attack() has been implemented correctly.")
         else:
             print("Test FAIL. Check the method fight_attack().")
-      pokemon_1 = PokemonElectricity(1, "Pikachu", WeaponType.HEADBUTT, 100, 8, 7)
+            pokemon_1 = PokemonElectricity(1, "Pikachu", WeaponType.HEADBUTT, 100, 8, 7)
 
     if pokemon_1.get_pokemon_name() == "Pikachu":
         print("Test PASS. The parameter pokemon_name has been correctly set.")
@@ -438,10 +438,21 @@ def main():
             print("Test PASS. The method fight_attack() has been implemented correctly.")
         else:
             print("Test FAIL. Check the method fight_attack().")
+def principal():
+    a = 1
+    b = 2
+    c = 3
+    m = 4
+    n = 5
+    l = 6
+    x = 7
+    y = 8
+    z = 9
+    
     def funcion_1(a, b, c):
-    a = b - c
-    b = c
-    return b
+        a = b - c
+        b = c
+        return b
 
 def funcion_2(x, y, z):
     a = z
@@ -471,18 +482,6 @@ def funcion_4(a, x, m):
     b = c
     return b
         
-
-def principal():
-    a = 1
-    b = 2
-    c = 3
-    m = 4
-    n = 5
-    l = 6
-    x = 7
-    y = 8
-    z = 9
-    
     funcion_2(a , b, c)
     
     print("Value of a : " + str(a))
@@ -494,11 +493,6 @@ def principal():
     print("Value of c : " + str(c))
     
     funcion_1(x , y, z)
-
-
-
-
-
 
 if __name__ == "__main__":
     main()
