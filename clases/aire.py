@@ -4,7 +4,7 @@ from weapon_type import WeaponType
 
 
 class PokemonAir(Pokemon):
-    obj_Pokemon = PokemonAir(1, "Pidgey", WeaponType.PUNCH, 100, 7, 10)
+    obj_Pokemon = Pokemon(1, "Pidgey", WeaponType.PUNCH, 100, 7, 10)
 
     def __init__(self, pokemon_id, pokemon_name, weapon_type, health_points, attack_rating, defense_rating):
         super().__init__(pokemon_id, pokemon_name, weapon_type, health_points, attack_rating, defense_rating)
